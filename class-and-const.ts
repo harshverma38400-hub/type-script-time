@@ -169,3 +169,99 @@
 // s.name="yuhu"
 // s.age =22
 // s.login()
+
+
+
+//**************************************************************************************
+
+// method overriding
+
+
+
+// class person{
+
+//     speak(){
+//         console.log("whats going on");
+        
+//     }
+// }
+
+// class student extends person{
+//     speak(){
+//       console.log("hehe.....");
+      
+//     }
+
+// }
+// class teacher extends person{}
+
+// const s= new student()
+// const t =new teacher()
+
+// s.speak()
+// t.speak()
+
+//************************************************************************************
+
+
+// enum
+// basically related/fixed values ka group banane ke liye enum use kar sakte ho.
+
+// ak jese grp bnaya ga ki bss yahi a sakta hai
+
+// enum STATUS{
+//     pending ="pending",
+//     sucess ="sucess",
+//     error="error"
+// }
+
+// let apicall :STATUS =STATUS.pending
+
+// console.log(apicall);
+
+
+// enum LUL {         // enum ka aga to name likhta hai vo alwaya capital rha ga or withod string vala 0 sa start hota hai  jese isam hai 
+//     sucess,
+//     process,
+//     hold
+// }
+
+// let call:LUL = LUL.hold
+// console.log(call);
+
+
+//*************************************************************************************
+
+//generic
+
+
+function greet<T>(data:T) :T{
+
+    return data
+}
+
+console.log(greet<number>(123));
+console.log(greet<string>("harsh"));
+console.log(greet<boolean>(false));
+
+
+const dot = greet<object>({
+
+    name:"harsh",
+    age:123,
+    address:"village",
+    gender:"male"
+})
+
+console.log(dot);
+
+
+function greet1<T>(data:T) :T{
+
+    return data
+}
+
+let arr = greet1<number[]>([20,40,90])  // arrya is liya use nhi kiya kyo ki ki array ka kya type hai vo nhi pta hota TS ko
+console.log(arr);
+
+
