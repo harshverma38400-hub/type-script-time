@@ -21,6 +21,9 @@
 // v.intro();
 
 
+//************************************************************************************
+
+
 
 //inharitance
 
@@ -37,6 +40,7 @@
 // let data = new bank()
 
 // console.log( data.password);
+
 
 
 // protected
@@ -64,6 +68,9 @@
 
 // // console.log(data.bankaccountno) // cant access out side the parent and child class 
 // data.bankdata()
+
+
+//************************************************************************************
 
 
 //extra asa hi try kiya hai
@@ -96,3 +103,69 @@
 
 // let cod =new stup(123,"harsh")
 // cod.data()
+
+
+//***********************************************************************************
+
+
+// hirarchical inheritance k party hai
+
+
+// class person{
+
+//     speak(){
+//         console.log("whats going on");
+        
+//     }
+// }
+
+// class student extends person{}
+// class teacher extends person{}
+
+// const s= new student()
+// const t =new teacher()
+
+// s.speak()
+// t.speak()
+
+
+// ************************************************************************************
+
+
+
+//multiple inheritance
+
+// we cannot you mutiple inher in TS thats we use interface for it 
+
+
+// interface person {
+
+//     name:string,
+//     age:number
+// }
+
+// interface login{
+
+//     login():void
+// }
+
+// class student implements person ,login{
+
+//     name: string
+//     age: number
+    
+//     constructor(name:string,age:number)
+//     {
+//         this.name =name
+//         this.age=age
+//     }
+//     login(): void {
+//         console.log("hell"+ this.name );   
+//     }
+// }
+
+// let s =new student("harsh",21)
+
+// s.name="yuhu"
+// s.age =22
+// s.login()
