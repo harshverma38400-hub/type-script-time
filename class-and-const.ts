@@ -235,33 +235,43 @@
 //generic
 
 
-function greet<T>(data:T) :T{
+// function greet<T>(data:T) :T{
 
-    return data
-}
+//     return data
+// }
 
-console.log(greet<number>(123));
-console.log(greet<string>("harsh"));
-console.log(greet<boolean>(false));
-
-
-const dot = greet<object>({
-
-    name:"harsh",
-    age:123,
-    address:"village",
-    gender:"male"
-})
-
-console.log(dot);
+// console.log(greet<number>(123));
+// console.log(greet<string>("harsh"));
+// console.log(greet<boolean>(false));
 
 
-function greet1<T>(data:T) :T{
+// const dot = greet<object>({
 
-    return data
-}
+//     name:"harsh",
+//     age:123,
+//     address:"village",
+//     gender:"male"
+// })
 
-let arr = greet1<number[]>([20,40,90])  // arrya is liya use nhi kiya kyo ki ki array ka kya type hai vo nhi pta hota TS ko
-console.log(arr);
+// console.log(dot);
 
 
+// function greet1<T>(data:T) :T{
+
+//     return data
+// }
+
+// let arr = greet1<number[]>([20,40,90])  // arrya is liya use nhi kiya kyo ki ki array ka kya type hai vo nhi pta hota TS ko
+// console.log(arr);
+
+
+
+// in        // TypeScript/JavaScript me in operator check karta hai ki koi property/key kisi object ke andar exist karti hai ya nahi.
+
+
+const user = {
+    name: "Harsh",
+    age: 22
+};
+
+console.log("name" in user);  // just check krta hai ki ander hai ya nhi 
